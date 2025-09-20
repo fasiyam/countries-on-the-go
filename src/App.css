@@ -1,8 +1,6 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
 
 .logo {
   height: 6em;
@@ -32,8 +30,38 @@
   }
 }
 
+body {
+  font-family: "Inter";
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .card {
-  padding: 2em;
+  padding: 1rem;
+  border: 1px solid gold;
+  margin: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.country-visited {
+  background-color: gray;
+}
+
+.country-info {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+}
+
+.card p {
+  font-size: 1.25rem;
 }
 
 .read-the-docs {
